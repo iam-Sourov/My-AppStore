@@ -9,7 +9,16 @@ const AppDetailCard = ({ appDetails }) => {
     const { id, image, title, downloads, ratingAvg, reviews, ratings, size, description } = appDetails;
 
     const handleAddToInstall = () => {
-        localStorage.setItem('Installation', JSON.stringify(appDetails));
+        const exisitingList = JSON.parse(localStorage.getItem('Installed'));
+        let updatedList = [];
+        if (exisitingList) {
+            const isDuplicate = exisitingList.some(app => app.id === appDetails.id);
+            if (isDuplicate) return alert('Already Exist')
+            updatedList = [...exisitingList, appDetails];
+        } else {
+            updatedList.push(appDetails);
+        }
+        localStorage.setItem('Installed', JSON.stringify(updatedList));
     }
     return (
         <div>
@@ -49,7 +58,7 @@ const AppDetailCard = ({ appDetails }) => {
                                 </div>
                             </div>
                         </div>
-                        <button onClick={() => { handleAddToInstall(id) }} className="btn bg-gradient-to-r from-[#54CF68] to-[#00827A] text-white ">Install Now <span>({size})</span>MB</button>
+                        <button onClick={() => { handleAddToInstall(id) }} className="btn bg-[#00D390] text-white ">Install Now <span>({size})</span>MB</button>
                     </div>
                 </div>
             </div>
