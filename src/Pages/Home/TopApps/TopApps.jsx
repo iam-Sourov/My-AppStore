@@ -4,18 +4,20 @@ import TopAppCard from './TopAppCard/TopAppCard';
 import { Link } from 'react-router';
 
 const TopApps = () => {
-    const { appData } = useData();
+    const { appData, loading } = useData();
     const topApps = appData.slice(0, 8);
+
 
     return (
         <div className='container mx-auto'>
+
             <div className='text-center space-y-6 mb-6'>
                 <h1 className='text-4xl font-bold'>Trending Apps</h1>
                 <p className='text-2xl text-gray-400'>Explore All Trending Apps on the Market developed by us</p>
             </div>
-            <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-6'>
+            <div className=' grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-6'>
                 {
-                    topApps.map(topApp => <TopAppCard key={topApp.id} topApp={topApp} ></TopAppCard>)
+                    topApps.map(topApp => <TopAppCard key={topApp.id} topApp={topApp} loading={loading}></TopAppCard>)
                 }
             </div>
             <div className='text-center'>

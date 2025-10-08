@@ -8,12 +8,7 @@ const AllApps = () => {
     const [search, setSearch] = useState('');
     console.log(search);
     const term = search.trim().toLowerCase();
-
     const searchedApp = term ? appData.filter(app => app.title.toLowerCase().includes(term)) : appData;
-
-
-
-
 
     return (
         <div className='mt-6'>

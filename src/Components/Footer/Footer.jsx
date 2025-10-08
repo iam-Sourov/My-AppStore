@@ -5,6 +5,7 @@ import GoogleStore from '../../assets/googleStore.svg'
 import { Link } from 'react-router';
 
 
+
 const Footer = () => {
     // 
     return (

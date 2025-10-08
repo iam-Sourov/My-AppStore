@@ -2,6 +2,7 @@
 import { FaGithub } from "react-icons/fa";
 import Logo from '../../assets/logo.png'
 import { Link, NavLink } from 'react-router';
+
 const Navbar = () => {
 
     return (

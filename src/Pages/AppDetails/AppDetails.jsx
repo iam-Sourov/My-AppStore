@@ -11,9 +11,6 @@ const AppDetails = () => {
     console.log(appData);
     const parseId = parseInt(id);
     const detailsApp = appData.filter(app => app.id === parseId);
-    console.log(detailsApp);
-
-
 
     return (
         <div className='container mx-auto'>

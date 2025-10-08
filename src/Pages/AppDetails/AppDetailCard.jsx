@@ -6,9 +6,11 @@ import Ratings from './Ratings';
 import Description from './Description';
 
 const AppDetailCard = ({ appDetails }) => {
-    const { image, title, downloads, ratingAvg, reviews, ratings, size, description } = appDetails;
+    const { id, image, title, downloads, ratingAvg, reviews, ratings, size, description } = appDetails;
 
-
+    const handleAddToInstall = () => {
+        localStorage.setItem('Installation', JSON.stringify(appDetails));
+    }
     return (
         <div>
             <div className="hero bg-white mt-4">
@@ -16,9 +18,9 @@ const AppDetailCard = ({ appDetails }) => {
                     <div className=''>
                         <img
                             src={image} alt=''
-                            className="max-w-sm rounded-lg shadow-2xl" />
+                            className="max-w-sm rounded-lg" />
                     </div>
-                    <div className='w-[70%] bg-white'>
+                    <div className='w-[70%] bg-white p-2 '>
                         <h1 className="text-5xl font-bold mb-2">{title}</h1>
                         <p className="">
                             Developed by <span className='bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent font-semibold'>Productive.io</span>
@@ -47,7 +49,7 @@ const AppDetailCard = ({ appDetails }) => {
                                 </div>
                             </div>
                         </div>
-                        <button className="btn bg-gradient-to-r from-[#54CF68] to-[#00827A] text-white ">Install Now <span>({size})</span>MB</button>
+                        <button onClick={() => { handleAddToInstall(id) }} className="btn bg-gradient-to-r from-[#54CF68] to-[#00827A] text-white ">Install Now <span>({size})</span>MB</button>
                     </div>
                 </div>
             </div>
