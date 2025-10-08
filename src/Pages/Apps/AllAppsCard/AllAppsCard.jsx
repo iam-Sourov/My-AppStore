@@ -1,15 +1,15 @@
 import React from 'react';
-import downIcon from '../../../../assets/icon-downloads.png'
-import ratingIcon from '../../../../assets/icon-ratings.png'
-import { Link } from 'react-router';
-const TopAppCard = ({ topApp }) => {
-    console.log(topApp);
+import downIcon from '../../../assets/icon-downloads.png'
+import ratingIcon from '../../../assets/icon-ratings.png'
+import AppError from '../../Error/AppError/AppError';
 
-    const { id, title, image, downloads, ratingAvg } = topApp;
-    console.log(id);
+const AllAppsCard = ({ allApps }) => {
+    const { title, image, downloads, ratingAvg } = allApps;
+    console.log(allApps);
 
     return (
-        <Link to={`/appDetails/${id}`}>
+        <div className=''>
+
             <div className="card bg-white shadow-sm">
                 <figure>
                     <img className='w-40 h-40 p-2 object-cover'
@@ -26,8 +26,8 @@ const TopAppCard = ({ topApp }) => {
                     </div>
                 </div>
             </div>
-        </Link>
+        </div>
     );
 };
 
-export default TopAppCard;
+export default AllAppsCard;

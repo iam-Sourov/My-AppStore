@@ -3,8 +3,6 @@ import { useEffect, useState } from "react"
 
 const useData = () => {
     const [appData, setAppData] = useState([]);
-    console.log(appData);
-
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState(null)
 
@@ -15,6 +13,6 @@ const useData = () => {
             .catch(err => setError(err))
             .finally(() => setLoading(false))
     }, [])
-    return { appData, loading, error }
+    return { appData, loading, error };
 }
 export default useData;

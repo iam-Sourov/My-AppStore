@@ -16,19 +16,19 @@ const State = () => {
                 </div>
                 <div className="card bg-transparent w-full shadow-sm">
                     <div className="card-body text-white flex flex-col space-y-3 items-center">
-                        <p className='text-white/30'>Total Downloads</p>
-                        <h1 className="card-title text-6xl">29.6M</h1>
-                        <p className='text-white/30'>21% more than last month</p>
+                        <p className='text-white/30'>Total Reviews</p>
+                        <h1 className="card-title text-6xl">906K</h1>
+                        <p className='text-white/30'>46% more than last month</p>
                     </div>
                 </div>
                 <div className="card bg-transparent w-full shadow-sm">
                     <div className="card-body text-white flex flex-col space-y-3 items-center">
-                        <p className='text-white/30'>Total Downloads</p>
-                        <h1 className="card-title text-6xl">29.6M</h1>
-                        <p className='text-white/30'>21% more than last month</p>
+                        <p className='text-white/30'>Active Apps</p>
+                        <h1 className="card-title text-6xl">132+</h1>
+                        <p className='text-white/30'>31 more will Launch</p>
                     </div>
                 </div>
-                
+
 
             </div>
         </div>

@@ -4,31 +4,31 @@
         "title": "ChatFlow AI",
         "companyName": "NovaTech Labs",
         "id": 1,
-        "description": "An AI-powered chat assistant that helps with writing, coding, and brainstorming ideas instantly.",
+        "description": "ChatFlow AI redefines productivity by combining intelligent writing, coding, and creative brainstorming into one seamless experience. Instead of switching between tools, you can write essays, generate code, or summarize documents all within a single chat. The app learns from your style to deliver smarter, more relevant suggestions over time. Its interface is clean and distraction-free, making it ideal for both quick tasks and long sessions of focused creation. Whether you’re drafting emails or developing software, ChatFlow AI becomes a true thinking partner that evolves with you.",
         "size": 86,
         "reviews": 24873,
         "ratingAvg": 4.6,
         "downloads": 1.2,
         "ratings": [
             {
-                "name": "1 star",
-                "count": 350
-            },
-            {
-                "name": "2 star",
-                "count": 520
-            },
-            {
-                "name": "3 star",
-                "count": 2100
+                "name": "5 star",
+                "count": 16303
             },
             {
                 "name": "4 star",
                 "count": 5600
             },
             {
-                "name": "5 star",
-                "count": 16303
+                "name": "3 star",
+                "count": 2100
+            },
+            {
+                "name": "2 star",
+                "count": 520
+            },
+            {
+                "name": "1 star",
+                "count": 350
             }
         ]
     },
@@ -37,31 +37,31 @@
         "title": "NoteCraft",
         "companyName": "PixelWave Studio",
         "id": 2,
-        "description": "Minimal and fast note-taking app with real-time cloud sync and markdown support.",
+        "description": "NoteCraft transforms simple note-taking into a smooth, creative experience. Its minimal interface helps you capture thoughts instantly without distractions. With markdown support, real-time syncing, and intelligent organization, your notes stay accessible and beautifully formatted across every device. You can tag, search, and even link ideas together to build your own knowledge base. Whether you’re a student, writer, or developer, NoteCraft helps turn fleeting ideas into lasting inspiration.",
         "size": 42,
         "reviews": 14322,
         "ratingAvg": 4.4,
         "downloads": 0.95,
         "ratings": [
             {
-                "name": "1 star",
-                "count": 210
-            },
-            {
-                "name": "2 star",
-                "count": 320
-            },
-            {
-                "name": "3 star",
-                "count": 1800
+                "name": "5 star",
+                "count": 9292
             },
             {
                 "name": "4 star",
                 "count": 4700
             },
             {
-                "name": "5 star",
-                "count": 9292
+                "name": "3 star",
+                "count": 1800
+            },
+            {
+                "name": "2 star",
+                "count": 320
+            },
+            {
+                "name": "1 star",
+                "count": 210
             }
         ]
     },
@@ -70,31 +70,31 @@
         "title": "PhotoZen",
         "companyName": "ShutterWave Co.",
         "id": 3,
-        "description": "Powerful photo editor with AI filters, background remover, and smart retouch tools.",
+        "description": "PhotoZen brings professional-level photo editing to your fingertips with an effortless, AI-powered experience. The app automatically enhances images, removes unwanted objects, and applies filters that adapt to your photo’s tone and style. Whether you’re retouching portraits or creating creative edits, PhotoZen’s smart adjustments save time while maintaining full control over every detail. Its intuitive interface, responsive sliders, and quick export options make editing feel natural and enjoyable.",
         "size": 110,
         "reviews": 56780,
         "ratingAvg": 4.8,
         "downloads": 3.4,
         "ratings": [
             {
-                "name": "1 star",
-                "count": 400
-            },
-            {
-                "name": "2 star",
-                "count": 650
-            },
-            {
-                "name": "3 star",
-                "count": 2300
+                "name": "5 star",
+                "count": 44230
             },
             {
                 "name": "4 star",
                 "count": 9200
             },
             {
-                "name": "5 star",
-                "count": 44230
+                "name": "3 star",
+                "count": 2300
+            },
+            {
+                "name": "2 star",
+                "count": 650
+            },
+            {
+                "name": "1 star",
+                "count": 400
             }
         ]
     },
@@ -103,31 +103,31 @@
         "title": "FitPulse",
         "companyName": "ActiveLife Inc.",
         "id": 4,
-        "description": "Track workouts, monitor calories, and sync with wearables for a healthier lifestyle.",
+        "description": "FitPulse is your personal health companion that turns fitness tracking into motivation. By syncing with wearables and monitoring calories, steps, and heart rate, it gives you a clear view of your progress every day. You can build custom workout routines, join community challenges, and track your habits with real-time feedback. The app’s clean visuals and simple layout make it easy to stay consistent, helping you transform goals into achievements without losing focus.",
         "size": 75,
         "reviews": 22140,
         "ratingAvg": 4.2,
         "downloads": 1.8,
         "ratings": [
             {
-                "name": "1 star",
-                "count": 530
-            },
-            {
-                "name": "2 star",
-                "count": 810
-            },
-            {
-                "name": "3 star",
-                "count": 2800
+                "name": "5 star",
+                "count": 8200
             },
             {
                 "name": "4 star",
                 "count": 7800
             },
             {
-                "name": "5 star",
-                "count": 8200
+                "name": "3 star",
+                "count": 2800
+            },
+            {
+                "name": "2 star",
+                "count": 810
+            },
+            {
+                "name": "1 star",
+                "count": 530
             }
         ]
     },
@@ -136,31 +136,31 @@
         "title": "CodeNest",
         "companyName": "Devly Studios",
         "id": 5,
-        "description": "A developer-friendly IDE on mobile with syntax highlighting and GitHub sync.",
+        "description": "CodeNest brings the full coding experience to your pocket with an elegant, developer-focused interface. It supports multiple languages, syntax highlighting, and GitHub sync, so you can code anywhere with ease. Real-time linting and auto-completion help you stay productive without frustration. Whether you’re testing quick scripts or managing full repositories, CodeNest turns your mobile device into a lightweight, reliable development tool built for modern coders.",
         "size": 98,
         "reviews": 13300,
         "ratingAvg": 4.5,
         "downloads": 0.86,
         "ratings": [
             {
-                "name": "1 star",
-                "count": 300
-            },
-            {
-                "name": "2 star",
-                "count": 480
-            },
-            {
-                "name": "3 star",
-                "count": 1400
+                "name": "5 star",
+                "count": 6920
             },
             {
                 "name": "4 star",
                 "count": 4200
             },
             {
-                "name": "5 star",
-                "count": 6920
+                "name": "3 star",
+                "count": 1400
+            },
+            {
+                "name": "2 star",
+                "count": 480
+            },
+            {
+                "name": "1 star",
+                "count": 300
             }
         ]
     },
@@ -169,31 +169,31 @@
         "title": "SoundLoom",
         "companyName": "EchoByte",
         "id": 6,
-        "description": "Music player and mixer that blends AI-generated beats with your playlist.",
+        "description": "SoundLoom turns your playlists into living soundscapes by blending AI-generated beats with your favorite music. The app analyzes your mood and creates seamless transitions between songs, giving every listening session a unique flow. You can adjust tempo, equalize sound, or mix tracks like a pro without any experience. With its smooth interface and vibrant visuals, SoundLoom feels less like a music player and more like a creative playground for your ears.",
         "size": 120,
         "reviews": 50210,
         "ratingAvg": 4.7,
         "downloads": 2.7,
         "ratings": [
             {
-                "name": "1 star",
-                "count": 620
-            },
-            {
-                "name": "2 star",
-                "count": 850
-            },
-            {
-                "name": "3 star",
-                "count": 2600
+                "name": "5 star",
+                "count": 37390
             },
             {
                 "name": "4 star",
                 "count": 8700
             },
             {
-                "name": "5 star",
-                "count": 37390
+                "name": "3 star",
+                "count": 2600
+            },
+            {
+                "name": "2 star",
+                "count": 850
+            },
+            {
+                "name": "1 star",
+                "count": 620
             }
         ]
     },
@@ -202,31 +202,31 @@
         "title": "Finora",
         "companyName": "SmartBank Apps",
         "id": 7,
-        "description": "Budget tracker and finance manager that helps you visualize spending and savings.",
+        "description": "Finora helps you take control of your finances through clarity and insight. The app visualizes your spending, tracks income automatically, and categorizes every transaction in real time. You can set savings goals, receive budget alerts, and view monthly analytics to improve financial habits. Its clean interface keeps data easy to understand, empowering you to make smarter money decisions with confidence and consistency.",
         "size": 61,
         "reviews": 18200,
         "ratingAvg": 4.3,
         "downloads": 1.4,
         "ratings": [
             {
-                "name": "1 star",
-                "count": 400
-            },
-            {
-                "name": "2 star",
-                "count": 520
-            },
-            {
-                "name": "3 star",
-                "count": 2000
+                "name": "5 star",
+                "count": 9080
             },
             {
                 "name": "4 star",
                 "count": 6200
             },
             {
-                "name": "5 star",
-                "count": 9080
+                "name": "3 star",
+                "count": 2000
+            },
+            {
+                "name": "2 star",
+                "count": 520
+            },
+            {
+                "name": "1 star",
+                "count": 400
             }
         ]
     },
@@ -235,31 +235,31 @@
         "title": "EduSphere",
         "companyName": "Learnify Labs",
         "id": 8,
-        "description": "Interactive learning platform with mini-courses, quizzes, and live classes.",
+        "description": "EduSphere makes learning interactive, personal, and enjoyable. Instead of long, boring lessons, it delivers bite-sized courses, live classes, and quizzes that adapt to your pace. You can track progress, earn badges, and receive tailored recommendations for your goals. Designed for students and lifelong learners alike, EduSphere keeps education engaging, accessible, and rewarding with every session.",
         "size": 89,
         "reviews": 39000,
         "ratingAvg": 4.6,
         "downloads": 2.3,
         "ratings": [
             {
-                "name": "1 star",
-                "count": 600
-            },
-            {
-                "name": "2 star",
-                "count": 750
-            },
-            {
-                "name": "3 star",
-                "count": 2400
+                "name": "5 star",
+                "count": 27650
             },
             {
                 "name": "4 star",
                 "count": 7600
             },
             {
-                "name": "5 star",
-                "count": 27650
+                "name": "3 star",
+                "count": 2400
+            },
+            {
+                "name": "2 star",
+                "count": 750
+            },
+            {
+                "name": "1 star",
+                "count": 600
             }
         ]
     },
@@ -268,31 +268,31 @@
         "title": "TravelMate",
         "companyName": "SkyBound Technologies",
         "id": 9,
-        "description": "Plan trips, find attractions, and get personalized travel routes with AI.",
+        "description": "TravelMate takes the stress out of trip planning by using AI to curate personalized journeys for you. It suggests attractions, restaurants, and travel routes that match your interests and time. You can save favorite spots, use offline maps, and get real-time navigation tips during your trip. Whether you’re backpacking solo or planning a family vacation, TravelMate becomes your digital tour guide — smart, friendly, and always ready to help.",
         "size": 103,
         "reviews": 25100,
         "ratingAvg": 4.5,
         "downloads": 1.9,
         "ratings": [
             {
-                "name": "1 star",
-                "count": 420
-            },
-            {
-                "name": "2 star",
-                "count": 640
-            },
-            {
-                "name": "3 star",
-                "count": 1900
+                "name": "5 star",
+                "count": 14440
             },
             {
                 "name": "4 star",
                 "count": 6700
             },
             {
-                "name": "5 star",
-                "count": 14440
+                "name": "3 star",
+                "count": 1900
+            },
+            {
+                "name": "2 star",
+                "count": 640
+            },
+            {
+                "name": "1 star",
+                "count": 420
             }
         ]
     },
@@ -301,31 +301,31 @@
         "title": "MindEase",
         "companyName": "CalmPath",
         "id": 10,
-        "description": "Meditation and relaxation app with ambient sounds and daily breathing sessions.",
+        "description": "MindEase creates a calming space where you can unwind, refocus, and recharge. The app offers guided meditations, gentle breathing sessions, and ambient sounds that help reduce stress and improve sleep. Its minimalist design keeps distractions away, allowing you to focus on your inner peace. With progress tracking and daily mindfulness reminders, MindEase makes relaxation a simple, sustainable habit.",
         "size": 70,
         "reviews": 33300,
         "ratingAvg": 4.8,
         "downloads": 2.5,
         "ratings": [
             {
-                "name": "1 star",
-                "count": 250
-            },
-            {
-                "name": "2 star",
-                "count": 370
-            },
-            {
-                "name": "3 star",
-                "count": 1600
+                "name": "5 star",
+                "count": 25000
             },
             {
                 "name": "4 star",
                 "count": 6100
             },
             {
-                "name": "5 star",
-                "count": 25000
+                "name": "3 star",
+                "count": 1600
+            },
+            {
+                "name": "2 star",
+                "count": 370
+            },
+            {
+                "name": "1 star",
+                "count": 250
             }
         ]
     },
@@ -334,31 +334,31 @@
         "title": "GameVault",
         "companyName": "NextPlay Entertainment",
         "id": 11,
-        "description": "All-in-one gaming hub to download, play, and track your favorite mobile games.",
+        "description": "GameVault unites all your favorite games in one sleek, social hub. You can discover trending titles, compete on leaderboards, and record gameplay with built-in tools. The app also tracks performance stats, achievements, and progress across multiple games automatically. Its dynamic interface makes browsing and playing seamless, turning your phone into a connected gaming universe.",
         "size": 150,
         "reviews": 42100,
         "ratingAvg": 4.1,
         "downloads": 3.1,
         "ratings": [
             {
-                "name": "1 star",
-                "count": 1200
-            },
-            {
-                "name": "2 star",
-                "count": 1900
-            },
-            {
-                "name": "3 star",
-                "count": 4100
+                "name": "5 star",
+                "count": 25700
             },
             {
                 "name": "4 star",
                 "count": 9100
             },
             {
-                "name": "5 star",
-                "count": 25700
+                "name": "3 star",
+                "count": 4100
+            },
+            {
+                "name": "2 star",
+                "count": 1900
+            },
+            {
+                "name": "1 star",
+                "count": 1200
             }
         ]
     },
@@ -367,31 +367,31 @@
         "title": "Shoply",
         "companyName": "UrbanCart",
         "id": 12,
-        "description": "Smart shopping assistant that tracks discounts, coupons, and price drops for you.",
+        "description": "Shoply transforms online shopping into a smarter, more rewarding experience. The app automatically tracks discounts, applies coupons, and alerts you when your favorite products drop in price. You can create wishlists, compare items, and manage deliveries all in one place. Designed for modern shoppers, Shoply helps you save money and time while discovering the best deals effortlessly.",
         "size": 80,
         "reviews": 29800,
         "ratingAvg": 4.4,
         "downloads": 2.2,
         "ratings": [
             {
-                "name": "1 star",
-                "count": 500
-            },
-            {
-                "name": "2 star",
-                "count": 670
-            },
-            {
-                "name": "3 star",
-                "count": 2000
+                "name": "5 star",
+                "count": 19330
             },
             {
                 "name": "4 star",
                 "count": 7300
             },
             {
-                "name": "5 star",
-                "count": 19330
+                "name": "3 star",
+                "count": 2000
+            },
+            {
+                "name": "2 star",
+                "count": 670
+            },
+            {
+                "name": "1 star",
+                "count": 500
             }
         ]
     }

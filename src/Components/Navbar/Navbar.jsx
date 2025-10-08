@@ -3,8 +3,10 @@ import { FaGithub } from "react-icons/fa";
 import Logo from '../../assets/logo.png'
 import { Link, NavLink } from 'react-router';
 const Navbar = () => {
+
     return (
-        <div className='navbar shadow-sm w-full'>
+
+        <div className='navbar bg-white shadow-sm w-full'>
             <div className="navbar-start ">
                 <div className="dropdown md:hidden">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -13,23 +15,22 @@ const Navbar = () => {
                     <ul
                         tabIndex={0}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                        <NavLink to={'/'}><li>Home</li></NavLink>
+                        <NavLink to={'/'} > <li>Home</li></NavLink>
                         <NavLink to={'/apps'}><li>App</li></NavLink>
                         <NavLink to={'/installation'}><li>Installation</li></NavLink>
-
                     </ul>
                 </div>
-                <Link className=" flex justify-center items-center gap-2   text-xl bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent "><img className='w-10 h-10' src={Logo} alt="Logo" />Hero.IO</Link>
+                <Link className=" flex justify-center items-center gap-2   text-xl bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent font-semibold"><img className='w-10 h-10' src={Logo} alt="Logo" />Hero.IO</Link>
             </div>
             <div className="navbar-center hidden md:flex">
                 <ul className="menu menu-horizontal space-x-3">
-                    <NavLink to={'/'}><li>Home</li></NavLink>
-                    <NavLink to={'/apps'}><li>App</li></NavLink>
-                    <NavLink to={'/installation'}><li>Installation</li></NavLink>
+                    <NavLink to={'/'} className={({ isActive }) => isActive ? "text-[#632EE3] underline font-semibold" : "text-black"}><li>Home</li></NavLink>
+                    <NavLink to={'/apps'} className={({ isActive }) => isActive ? "text-[#632EE3] underline font-semibold" : "text-black"}><li>App</li></NavLink>
+                    <NavLink to={'/installation'} className={({ isActive }) => isActive ? "text-[#632EE3] underline font-semibold" : "text-black"}><li>Installation</li></NavLink>
                 </ul>
             </div>
             <div className="navbar-end">
-                <button className="btn text-white bg-gradient-to-r from-[#632EE3] to-[#9F62F2]"><FaGithub></FaGithub>Contribute</button>
+                <Link to={'https://github.com/iam-Sourov'} className="btn text-white border-none bg-gradient-to-r from-[#632EE3] to-[#9F62F2]"><FaGithub></FaGithub> Contribute</Link>
             </div>
         </div>
     );
