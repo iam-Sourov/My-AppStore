@@ -28,41 +28,42 @@ const AppDetailCard = ({ appDetails }) => {
                     <div className=''>
                         <img
                             src={image} alt=''
-                            className="max-w-sm rounded-lg" />
+                            className="bg-base-100 w-60 rounded-lg shadow-sm" />
                     </div>
-                    <div className='w-[70%] bg-white p-2 '>
-                        <h1 className="text-5xl font-bold mb-2">{title}</h1>
-                        <p className="">
+                    <div className='md:w-[70%] bg-white p-2 '>
+                        <h1 className="text-center md:text-left text-5xl font-bold mb-2">{title}</h1>
+                        <p className="text-center md:text-left">
                             Developed by <span className='bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent font-semibold'>Productive.io</span>
                         </p>
                         <div className="divider divider-neutral"></div>
-                        <div className='h-full flex flex-col md:flex-row justify-center items-center gap-2 p-2'>
-                            <div className="card bg-transparent w-full h-full shadow-sm">
-                                <div className="card-body flex flex-col space-y-1 items-start">
-                                    <img src={DownIcon} alt="" />
+                        <div className='h-full flex justify-center md:justify-start items-center gap-2 p-2'>
+                            <div className="card bg-transparent shadow-sm  ">
+                                <div className="card-body flex flex-col h-40 space-y-1 items-center">
+                                    <img className='w-5' src={DownIcon} alt="" />
                                     <p className='text-black'>Downloads</p>
                                     <h1 className="card-title text-2xl"><span>{downloads}</span>M</h1>
                                 </div>
                             </div>
-                            <div className="card bg-transparent w-full h-full shadow-sm">
-                                <div className="card-body flex flex-col space-y-1 items-start">
-                                    <img src={RatingIcon} alt="" />
+                            <div className="card bg-transparent shadow-sm ">
+                                <div className="card-body flex flex-col h-40 space-y-1 items-start">
+                                    <img className='w-5' src={RatingIcon} alt="" />
                                     <p className='text-black'>Average Ratings</p>
                                     <h1 className="card-title text-2xl"><span>{ratingAvg}</span>K</h1>
                                 </div>
                             </div>
-                            <div className="card bg-transparent w-full h-full shadow-sm">
-                                <div className="card-body flex flex-col space-y-1 items-start">
-                                    <img src={ReviewIcon} alt="" />
+                            <div className="card bg-transparent shadow-sm ">
+                                <div className="card-body flex flex-col h-40 space-y-1 items-start">
+                                    <img className='w-5' src={ReviewIcon} alt="" />
                                     <p className='text-black'>Total</p>
                                     <h1 className="card-title text-2xl"><span>{reviews}</span>+</h1>
                                 </div>
                             </div>
                         </div>
-
-                        <button onClick={handleInstallClick}
-                            disabled={isButtonDisabled}
-                            className={`btn bg-[#00D390] ${isButtonDisabled ? 'text-black' : 'text-white'}  `}>{`${isButtonDisabled ? 'Installed' : 'Install Now'}`} <span>({size})</span>MB</button>
+                        <div className='flex justify-center md:justify-start'>
+                            <button onClick={handleInstallClick}
+                                disabled={isButtonDisabled}
+                                className={`btn bg-[#00D390] ${isButtonDisabled ? 'text-black' : 'text-white'}  `}>{`${isButtonDisabled ? 'Installed' : 'Install Now'}`} <span>({size})</span>MB</button>
+                        </div>
                     </div>
                 </div>
             </div>

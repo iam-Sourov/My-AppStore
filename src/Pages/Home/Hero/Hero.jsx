@@ -5,7 +5,7 @@ import { Link } from 'react-router';
 
 const Hero = () => {
     return (
-        <div className="hero bg-white h-96 mb-3">
+        <div className="hero bg-white h-96 mb-4 md-4">
             <div className="hero-content text-center">
                 <div className="max-w-md">
                     <h1 className="text-6xl font-bold md:text-nowrap">We Build <br />
