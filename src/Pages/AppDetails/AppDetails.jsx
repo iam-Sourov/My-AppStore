@@ -6,9 +6,7 @@ import AppDetailCard from './AppDetailCard';
 
 const AppDetails = () => {
     const { id } = useParams();
-    console.log(id);
     const { appData } = useData();
-    console.log(appData);
     const parseId = parseInt(id);
     const detailsApp = appData.filter(app => app.id === parseId);
 

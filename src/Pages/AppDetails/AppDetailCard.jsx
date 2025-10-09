@@ -4,22 +4,12 @@ import DownIcon from '../../assets/icon-downloads.png'
 import ReviewIcon from '../../assets/icon-review.png'
 import Ratings from './Ratings';
 import Description from './Description';
+import { installationList } from '../../Utilities/CustomFunctions';
 
 const AppDetailCard = ({ appDetails }) => {
-    const { id, image, title, downloads, ratingAvg, reviews, ratings, size, description } = appDetails;
+    const { image, title, downloads, ratingAvg, reviews, ratings, size, description } = appDetails;
 
-    const handleAddToInstall = () => {
-        const exisitingList = JSON.parse(localStorage.getItem('Installed'));
-        let updatedList = [];
-        if (exisitingList) {
-            const isDuplicate = exisitingList.some(app => app.id === appDetails.id);
-            if (isDuplicate) return alert('Already Exist')
-            updatedList = [...exisitingList, appDetails];
-        } else {
-            updatedList.push(appDetails);
-        }
-        localStorage.setItem('Installed', JSON.stringify(updatedList));
-    }
+
     return (
         <div>
             <div className="hero bg-white mt-4">
@@ -58,7 +48,7 @@ const AppDetailCard = ({ appDetails }) => {
                                 </div>
                             </div>
                         </div>
-                        <button onClick={() => { handleAddToInstall(id) }} className="btn bg-[#00D390] text-white ">Install Now <span>({size})</span>MB</button>
+                        <button onClick={() => { installationList(appDetails) }} className="btn bg-[#00D390] text-white ">Install Now <span>({size})</span>MB</button>
                     </div>
                 </div>
             </div>

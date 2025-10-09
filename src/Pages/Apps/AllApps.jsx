@@ -1,14 +1,19 @@
 import React, { useState } from 'react';
 import useData from '../../Hooks/useData';
 import AllAppsCard from './AllAppsCard/AllAppsCard';
+import LoadingSpinner from '../../Components/LoadingSpinner/LoadingSpinner';
 
 
 const AllApps = () => {
-    const { appData } = useData();
+    const { appData, loading } = useData();
+
+
     const [search, setSearch] = useState('');
-    console.log(search);
     const term = search.trim().toLowerCase();
     const searchedApp = term ? appData.filter(app => app.title.toLowerCase().includes(term)) : appData;
+
+
+
 
     return (
         <div className='mt-6'>
@@ -28,13 +33,13 @@ const AllApps = () => {
                     </label>
                 </div>
             </div>
-            <div className='container mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-6'>
-                {
-                    searchedApp.map(allApps => <AllAppsCard key={allApps.id} allApps={allApps}></AllAppsCard>)
-
-                }
-            </div>
-
+            {loading ? <LoadingSpinner></LoadingSpinner>
+                : <div className="container mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-6">
+                    {searchedApp.map((allApps) => (
+                        <AllAppsCard key={allApps.id} allApps={allApps} />
+                    ))}
+                </div>
+            }
         </div>
     );
 };

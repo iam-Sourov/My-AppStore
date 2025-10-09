@@ -2,12 +2,10 @@ import React from 'react';
 import downIcon from '../../../../assets/icon-downloads.png'
 import ratingIcon from '../../../../assets/icon-ratings.png'
 import { Link } from 'react-router';
-import Loader from '../../../../Components/LoadingSpinner/Loader';
-const TopAppCard = ({ topApp, loading }) => {
-    console.log(topApp);
-    if(loading) return <Loader></Loader>
+
+const TopAppCard = ({ topApp }) => {
     const { id, title, image, downloads, ratingAvg } = topApp;
-    console.log(id);
+
 
     return (
         <Link to={`/appDetails/${id}`}>

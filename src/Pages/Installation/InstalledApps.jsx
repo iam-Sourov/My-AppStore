@@ -1,10 +1,10 @@
-import React from 'react';
 import downIcon from '../../assets/icon-downloads.png'
 import ratingIcon from '../../assets/icon-ratings.png'
 
-const InstalledApps = (iApp) => {
-    console.log(iApp);
-    const { title,image,size,downloads,ratingAvg } = iApp.iApp;
+const InstalledApps = ({ iApp, handleRemoveUninstall }) => {
+
+    const { id, title, image, size, downloads, ratingAvg } = iApp;
+
 
     return (
         <div>
@@ -25,7 +25,7 @@ const InstalledApps = (iApp) => {
                     </div>
                 </div>
                 <div>
-                    <button className="btn bg-[#00D390] text-white ">Uninstall</button>
+                    <button onClick={() => handleRemoveUninstall(id)} className="btn bg-[#00D390] text-white ">Uninstall</button>
                 </div>
             </div>
         </div>

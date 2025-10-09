@@ -6,7 +6,6 @@ import { Link } from 'react-router';
 
 const AllAppsCard = ({ allApps }) => {
     const { id, title, image, downloads, ratingAvg } = allApps;
-    console.log(allApps);
 
     return (
         <div className=''>
