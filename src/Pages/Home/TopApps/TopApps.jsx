@@ -10,7 +10,7 @@ const TopApps = () => {
 
 
     return (
-        <div className='container mx-auto'>
+        <div className='container mx-auto mt-3'>
 
             <div className='text-center space-y-6 mb-6'>
                 <h1 className='text-4xl font-bold'>Trending Apps</h1>
@@ -23,7 +23,6 @@ const TopApps = () => {
                     }
                 </div>
             }
-
             <div className='text-center'>
                 <Link to={'/apps'} className="btn m-6 text-white bg-gradient-to-r from-[#632EE3] to-[#9F62F2]">Show All</Link>
             </div>

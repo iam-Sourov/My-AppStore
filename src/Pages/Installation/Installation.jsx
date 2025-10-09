@@ -4,6 +4,7 @@ import AppError from '../Error/AppError/AppError';
 import { loadInstallData } from '../../Utilities/CustomFunctions';
 import useData from '../../Hooks/useData';
 import LoadingSpinner from '../../Components/LoadingSpinner/LoadingSpinner';
+import { toast } from 'react-toastify';
 
 
 const Installation = () => {
@@ -30,6 +31,8 @@ const Installation = () => {
         const updatedList = existingList.filter(app => app.id !== id);
         setInstalledApp(updatedList);
         localStorage.setItem('Installed', JSON.stringify(updatedList));
+        localStorage.removeItem(`installDisabled_${id}`);
+        toast('App Uninstalled');
     }
     return (
         <div className='mt-6 '>

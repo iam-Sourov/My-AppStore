@@ -3,7 +3,6 @@ import { createRoot } from 'react-dom/client'
 import { RouterProvider } from "react-router/dom";
 import router from './Routes/Router'
 import './index.css'
-import MainLayout from './Pages/MainLayout/MainLayout';
 
 
 

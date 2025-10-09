@@ -1,15 +1,26 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import RatingIcon from '../../assets/icon-ratings.png'
 import DownIcon from '../../assets/icon-downloads.png'
 import ReviewIcon from '../../assets/icon-review.png'
 import Ratings from './Ratings';
 import Description from './Description';
 import { installationList } from '../../Utilities/CustomFunctions';
+import { toast } from 'react-toastify';
 
 const AppDetailCard = ({ appDetails }) => {
-    const { image, title, downloads, ratingAvg, reviews, ratings, size, description } = appDetails;
+    const { id, image, title, downloads, ratingAvg, reviews, ratings, size, description } = appDetails;
+    const [isButtonDisabled, setIsButtonDisabled] = useState(() => {
 
-
+        return localStorage.getItem(`installDisabled_${id}`) === 'true';
+    });
+    useEffect(() => {
+        localStorage.setItem(`installDisabled_${id}`, isButtonDisabled);
+    }, [isButtonDisabled, id]);
+    const handleInstallClick = () => {
+        toast('Installed');
+        setIsButtonDisabled(true);
+        installationList(appDetails);
+    };
     return (
         <div>
             <div className="hero bg-white mt-4">
@@ -48,7 +59,10 @@ const AppDetailCard = ({ appDetails }) => {
                                 </div>
                             </div>
                         </div>
-                        <button onClick={() => { installationList(appDetails) }} className="btn bg-[#00D390] text-white ">Install Now <span>({size})</span>MB</button>
+
+                        <button onClick={handleInstallClick}
+                            disabled={isButtonDisabled}
+                            className={`btn bg-[#00D390] ${isButtonDisabled ? 'text-black' : 'text-white'}  `}>{`${isButtonDisabled ? 'Installed' : 'Install Now'}`} <span>({size})</span>MB</button>
                     </div>
                 </div>
             </div>
