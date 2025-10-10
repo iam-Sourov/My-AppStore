@@ -9,7 +9,7 @@ const TopAppCard = ({ topApp }) => {
 
     return (
         <Link to={`/appDetails/${id}`}>
-            <div className="card bg-white shadow-sm hover:scale-105 transition ease-in-out hover:bg-gradient-to-r from-[#632EE3] to-[#9F62F2]  hover:text-white">
+            <div className="card bg-white shadow-sm hover:scale-105 transition ease-in-out hover:bg-gradient-to-r from-[#24243e] via-[#302b63] to-[#0f0c29]  hover:text-white">
                 <figure>
                     <img className='mt-6 w-30 h-30 p-2 object-cover'
                         src={image}
@@ -20,8 +20,8 @@ const TopAppCard = ({ topApp }) => {
                         {title}
                     </h2>
                     <div className="card-actions justify-between">
-                        <div className=" badge border-none bg-[#F1F5E8] text-[#00D390]"><img className='w-3 h-3' src={downIcon} alt="" />{downloads} M</div>
-                        <div className=" badge border-none bg-[#FFF0E1] text-[#FF8811]"> <img className='w-3 h-3' src={ratingIcon} alt="" />{ratingAvg}</div>
+                        <div className="badge w-full md:w-fit  border-none bg-[#F1F5E8] text-[#00D390]"><img className='w-3 h-3' src={downIcon} alt="" />{downloads} M</div>
+                        <div className="badge w-full md:w-fit  border-none bg-[#FFF0E1] text-[#FF8811]"> <img className='w-3 h-3' src={ratingIcon} alt="" />{ratingAvg}</div>
                     </div>
                 </div>
             </div>

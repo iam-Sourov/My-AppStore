@@ -26,6 +26,8 @@ const Installation = () => {
             return installedApp;
         }
     }
+    
+    
     const handleRemoveUninstall = (id) => {
         const existingList = JSON.parse(localStorage.getItem('Installed'))
         const updatedList = existingList.filter(app => app.id !== id);

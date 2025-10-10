@@ -9,7 +9,7 @@ const AllAppsCard = ({ allApps }) => {
     return (
         <div className=''>
             <Link to={`/appDetails/${id}`}>
-                <div className="card max-w-[300px] bg-white shadow-sm hover:scale-105 transition ease-in-out hover:bg-gradient-to-r from-[#632EE3] to-[#9F62F2]  hover:text-white">
+                <div className="card max-w-[300px] bg-white shadow-sm hover:scale-105 transition ease-in-out hover:bg-gradient-to-r from-[#24243e] via-[#302b63] to-[#0f0c29]  hover:text-white">
                     <figure>
                         <img className='mt-6 w-40 h-40 p-2 object-cover'
                             src={image}

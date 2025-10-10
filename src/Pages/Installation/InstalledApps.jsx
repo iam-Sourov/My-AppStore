@@ -16,7 +16,6 @@ const InstalledApps = ({ iApp, handleRemoveUninstall }) => {
                     <div className=" flex flex-col">
                         <h2 className="card-title mb-2">{title}</h2>
                         <div className='flex gap-3'>
-
                             <div className="badge border-none bg-[#F1F5E8] text-[#00D390]"><img className='w-3 h-3' src={downIcon} alt="" />{downloads} M</div>
                             <div className="badge border-none bg-[#FFF0E1] text-[#FF8811]"> <img className='w-3 h-3' src={ratingIcon} alt="" />{ratingAvg}</div>
                             <div className="badge border-none text-gray-400">
