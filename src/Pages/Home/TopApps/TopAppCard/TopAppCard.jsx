@@ -6,23 +6,16 @@ import { Link } from 'react-router';
 const TopAppCard = ({ topApp }) => {
     const { id, title, image, downloads, ratingAvg } = topApp;
 
-
     return (
-        <Link to={`/appDetails/${id}`}>
-            <div className="card bg-white shadow-sm hover:scale-105 transition ease-in-out hover:bg-gradient-to-r from-[#24243e] via-[#302b63] to-[#0f0c29]  hover:text-white">
-                <figure>
-                    <img className='mt-6 w-30 h-30 p-2 object-cover'
-                        src={image}
-                        alt="Shoes" />
-                </figure>
-                <div className="card-body">
-                    <h2 className="card-title">
-                        {title}
-                    </h2>
-                    <div className="card-actions justify-between">
-                        <div className="badge w-full md:w-fit  border-none bg-[#F1F5E8] text-[#00D390]"><img className='w-3 h-3' src={downIcon} alt="" />{downloads} M</div>
-                        <div className="badge w-full md:w-fit  border-none bg-[#FFF0E1] text-[#FF8811]"> <img className='w-3 h-3' src={ratingIcon} alt="" />{ratingAvg}</div>
-                    </div>
+        <Link to={`/appDetails/${id}`} className="card bg-base-100 shadow-lg hover:shadow-2xl transition-shadow duration-300">
+            <figure className="px-4 pt-4">
+                <img src={image} alt={title} className="rounded-xl h-40 w-full object-cover" />
+            </figure>
+            <div className="card-body items-center text-center">
+                <h2 className="card-title">{title}</h2>
+                <div className="card-actions justify-center gap-2 mt-2">
+                    <div className="badge badge-outline"><img className='w-3 h-3 mr-1' src={downIcon} alt="downloads" />{downloads} M</div>
+                    <div className="badge badge-outline"><img className='w-3 h-3 mr-1' src={ratingIcon} alt="rating" />{ratingAvg}</div>
                 </div>
             </div>
         </Link>
