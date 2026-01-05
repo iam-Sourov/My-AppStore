@@ -8,22 +8,21 @@ const TopApps = () => {
     const { appData, loading } = useData();
     const topApps = appData.slice(0, 8);
 
-
     return (
-        <div className='container mx-auto mt-3'>
-            <div className='text-center space-y-6 mb-6'>
+        <div className='container mx-auto py-12'>
+            <div className='text-center space-y-4 mb-8'>
                 <h1 className='text-4xl font-bold'>Trending Apps</h1>
-                <p className='text-2xl text-gray-400'>Explore All Trending Apps on the Market developed by us</p>
+                <p className='text-xl text-content-secondary'>Explore All Trending Apps on the Market developed by us</p>
             </div>
             {
-                loading ? <LoadingSpinner></LoadingSpinner> : <div className=' grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-6'>
-                    {
-                        topApps.map(topApp => <TopAppCard key={topApp.id} topApp={topApp} loading={loading}></TopAppCard>)
-                    }
-                </div>
+                loading ? <LoadingSpinner /> : (
+                    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-4'>
+                        {topApps.map(topApp => <TopAppCard key={topApp.id} topApp={topApp} />)}
+                    </div>
+                )
             }
-            <div className='text-center'>
-                <Link to={'/apps'} className="btn m-6 text-white bg-gradient-to-r from-[#632EE3] to-[#9F62F2]">Show All</Link>
+            <div className='text-center mt-8'>
+                <Link to={'/apps'} className="btn btn-primary bg-gradient-to-r from-primary to-secondary text-white">Show All</Link>
             </div>
         </div>
     );
