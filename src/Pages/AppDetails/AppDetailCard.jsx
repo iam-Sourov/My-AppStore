@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, lazy, Suspense } from 'react';
 import RatingIcon from '../../assets/icon-ratings.png'
 import DownIcon from '../../assets/icon-downloads.png'
 import ReviewIcon from '../../assets/icon-review.png'
-import Ratings from './Ratings';
 import Description from './Description';
 import { installationList } from '../../Utilities/CustomFunctions';
 import { toast } from 'react-toastify';
+import LoadingSpinner from '../../Components/LoadingSpinner/LoadingSpinner';
+
+const Ratings = lazy(() => import('./Ratings'));
 
 const AppDetailCard = ({ appDetails }) => {
     const { id, image, title, downloads, ratingAvg, reviews, ratings, size, description } = appDetails;
@@ -68,7 +70,9 @@ const AppDetailCard = ({ appDetails }) => {
                 </div>
             </div>
             <div className="divider divider-neutral"></div>
-            <Ratings ratings={ratings}></Ratings>
+            <Suspense fallback={<LoadingSpinner />}>
+                <Ratings ratings={ratings}></Ratings>
+            </Suspense>
             <Description description={description}></Description>
         </div>
     );
