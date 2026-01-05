@@ -12,9 +12,7 @@ const useData = () => {
             .then(data => setAppData(data.data))
             .catch(err => setError(err))
             .finally(() => {
-                setTimeout(() => {
-                    setLoading(false)
-                }, 600);
+                setLoading(false)
             })
     }, [])
     return { appData, loading, error };
